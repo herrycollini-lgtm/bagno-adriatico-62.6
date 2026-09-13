@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 
 :root{
-  /* Mediterranean Riviera Chic — palette */
-  --ocean:#0B192C;        /* Blu Notte Oltremare — primary / text / primary buttons */
+  /* Mediterranean Riviera Chic: palette */
+  --ocean:#0B192C;        /* Blu Notte Oltremare: primary / text / primary buttons */
   --ocean-dark:#071120;   /* darker navy for dark sections */
-  --teal:#C85A32;         /* Terracotta Tramonto — warm accent */
-  --gold:#E2C08D;         /* Oro Champagne — luxury accent */
-  --light:#F9F8F3;        /* Sabbia Calda — main background */
-  --sand:#F1EDE2;         /* slightly deeper sand — alternating sections */
+  --teal:#C85A32;         /* Terracotta Tramonto: warm accent */
+  --gold:#E2C08D;         /* Oro Champagne: luxury accent */
+  --light:#F9F8F3;        /* Sabbia Calda: main background */
+  --sand:#F1EDE2;         /* slightly deeper sand, alternating sections */
   --ink:#0B192C;
   --ink-soft:#5B6472;
   --line:rgba(11,25,44,0.12);
@@ -114,7 +114,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:8px;
   padding:14px 28px;
-  border-radius:999px;
+  border-radius:var(--radius);
   font-family:var(--font-body);
   font-weight:600;
   font-size:0.9rem;
@@ -437,7 +437,7 @@ footer{background:var(--ink);color:rgba(255,255,255,0.82);padding:76px 0 32px;}
 
 .booking-tabs{display:flex;gap:12px;margin-bottom:44px;flex-wrap:wrap;}
 .booking-tab{
-  padding:14px 22px;border-radius:999px;border:1px solid var(--line);
+  padding:14px 22px;border-radius:var(--radius);border:1px solid var(--line);
   background:#fff;cursor:pointer;font-weight:600;font-size:0.92rem;color:var(--ink-soft);
   transition:border-color .2s ease,background .2s ease,color .2s ease;
 }
