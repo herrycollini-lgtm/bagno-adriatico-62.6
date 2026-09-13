@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Bagno Adriatico 62 Cesenatico — Beach Club, ristorante gourmet, sport, aperitivi e sunset events sul mare.">
+  <meta name="theme-color" content="#005F73">
+  <title>Bagno Adriatico 62 — Cesenatico Beach Club</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+  <meta property="og:title" content="Bagno Adriatico 62 — Cesenatico Beach Club">
+  <meta property="og:description" content="Beach club, gourmet terrace, sport e sunset DJ sets sul mare di Cesenatico.">
+  <meta property="og:type" content="website">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Beach", "Restaurant"],
+    "name": "Bagno Adriatico 62",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Viale Pasubio 62",
+      "addressLocality": "Cesenatico",
+      "addressRegion": "FC",
+      "addressCountry": "IT"
+    },
+    "servesCuisine": "Seafood",
+    "priceRange": "€€",
+    "url": ""
+  }
+  </script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <a class="logo" href="#home" aria-label="Bagno Adriatico 62">
+    BAGNO ADRIATICO <span class="num">62</span>
+  </a>
+
+  <nav class="main-nav" aria-label="Navigazione principale">
+    <a href="#home" data-i18n="nav.home">Home</a>
+    <a href="#restaurant" data-i18n="nav.rist">Restaurant</a>
+    <a href="#beach">Beach Club</a>
+    <a href="#arena">Beach Arena</a>
+    <a href="#events">Events</a>
+    <a href="#booking" class="btn btn-gold" data-i18n="nav.book">Book now</a>
+  </nav>
+
+  <div class="header-actions">
+    <div class="lang-switch" aria-label="Language">
+      <button type="button" class="active" data-lang="it">IT</button>
+      <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="de">DE</button>
+    </div>
+    <button class="nav-toggle" type="button" aria-label="Apri menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="home">
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Bagno Adriatico 62"
+            style="background-image:url('https://images.unsplash.com/photo-1498740691211-eb7979f50128?auto=format&amp;fit=crop&amp;w=1800&amp;q=80');">
+    <video autoplay muted loop playsinline poster="{{ url_for('static', filename='assets/hero-poster.webp') }}"
+           style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+      <source src="{{ url_for('static', filename='assets/hero-beachclub.mp4') }}" type="video/mp4">
+    </video>
+
+    <div class="hero-inner">
+      <div class="hero-content">
+        <p class="hero-eyebrow" data-i18n="hero.eyebrow">Cesenatico, costa adriatica</p>
+        <h1 data-i18n="hero.title">L'arte del relax in riva al mare.</h1>
+        <p class="hero-sub" data-i18n="hero.sub">
+          Spiaggia riservata, cucina di mare ed esperienze al tramonto —
+          lettini premium, cucina d'autore, dal giorno alla notte.
+        </p>
+        <div class="hero-ctas">
+          <a href="#booking" class="btn btn-gold magnetic" data-i18n="hero.cta1">Prenota ombrellone</a>
+          <a href="#restaurant" class="btn btn-outline magnetic" data-i18n="hero.cta2">Riserva un tavolo</a>
+        </div>
+      </div>
+
+      <div class="ticker" aria-label="Esperienze">
+        <div class="ticker-track">
+          <span>BEACH</span><span>•</span>
+          <span>LOUNGE</span><span>•</span>
+          <span>GOURMET</span><span>•</span>
+          <span>EVENTS</span><span>•</span>
+          <span>BEACH ARENA</span><span>•</span>
+          <span>BEACH</span><span>•</span>
+          <span>LOUNGE</span><span>•</span>
+          <span>GOURMET</span><span>•</span>
+          <span>EVENTS</span><span>•</span>
+          <span>BEACH ARENA</span><span>•</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BEACH CLUB -->
+  <section id="beach" class="section-sand">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow-label" data-i18n="beach.eyebrow">The Beach Club</span>
+        <h2 data-i18n="beach.title">Spazio per staccare davvero.</h2>
+        <p class="lead-p" data-i18n="beach.p">
+          120 ombrelloni e 280 lettini con reale distanza tra le file,
+          baldacchini VIP in prima fila e 23 cabine private per chi vuole
+          arrivare, cambiarsi e perdersi nella giornata.
+        </p>
+      </div>
+
+      <div class="bento-grid reveal">
+        <div class="bento-item bento-big"
+             style="background-image:url('{{ url_for('static', filename='assets/beach-club.webp') }}'), url('https://images.unsplash.com/photo-1498740691211-eb7979f50128?auto=format&amp;fit=crop&amp;w=1000&amp;q=80');">
+          <h4>Gazebo VIP &amp; lettini king size</h4>
+          <p>Baldacchini in prima fila, servizio al lettino incluso.</p>
+        </div>
+        <div class="bento-item bento-med"
+             style="background-image:url('https://images.unsplash.com/photo-1666129793624-1e037acbbc07?auto=format&amp;fit=crop&amp;w=900&amp;q=80');">
+          <h4>Beach bar &amp; mixology</h4>
+          <p>Cocktail signature a bordo spiaggia, dall'aperitivo al tramonto.</p>
+        </div>
+        <div class="bento-item bento-small"
+             style="background-image:url('https://images.unsplash.com/photo-1716003483250-37b509940352?auto=format&amp;fit=crop&amp;w=700&amp;q=80');">
+          <h4>Cabine &amp; docce calde</h4>
+          <p>23 cabine private, sempre a disposizione.</p>
+        </div>
+        <div class="bento-item bento-small"
+             style="background-image:url('https://images.unsplash.com/photo-1768326119231-bf064c1b8fdf?auto=format&amp;fit=crop&amp;w=700&amp;q=80');">
+          <h4>Sport &amp; SUP</h4>
+          <p>Campi illuminati, tavole in noleggio.</p>
+        </div>
+      </div>
+
+      <div class="stat-row">
+        <div class="stat">
+          <b data-i18n="beach.stat1n">120</b>
+          <span data-i18n="beach.stat1l">ombrelloni</span>
+        </div>
+        <div class="stat">
+          <b data-i18n="beach.stat2n">280</b>
+          <span data-i18n="beach.stat2l">lettini king-size</span>
+        </div>
+        <div class="stat">
+          <b data-i18n="beach.stat3n">23</b>
+          <span data-i18n="beach.stat3l">cabine private</span>
+        </div>
+      </div>
+
+      <a href="#booking" class="btn btn-ocean magnetic" style="margin-top:36px;" data-i18n="beach.cta">
+        Scopri spiaggia &amp; gazebo VIP
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOD -->
+  <section id="restaurant">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow-label" data-i18n="food.eyebrow">Food &amp; Mixology</span>
+        <h2 data-i18n="food.title">Chef Davide Tusa, con i piedi nella sabbia.</h2>
+        <p class="lead-p" data-i18n="food.p">
+          Una cucina che prende sul serio la spiaggia: pesce crudo, impiattamenti puliti
+          e un cocktail bar costruito per l'ora prima della cena.
+        </p>
+      </div>
+
+      <div class="dish-list reveal">
+        <article class="dish-row">
+          <img src="{{ url_for('static', filename='assets/food-poke.webp') }}" alt="Poke al salmone" loading="lazy"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1768326119231-bf064c1b8fdf?auto=format&amp;fit=crop&amp;w=400&amp;q=80';">
+          <div>
+            <h4 data-i18n="food.d1t">Poke al salmone</h4>
+            <p data-i18n="food.d1p">Salmone marinato, edamame, avocado, sesamo, dressing agli agrumi.</p>
+          </div>
+          <span class="price">€ 16</span>
+        </article>
+
+        <article class="dish-row">
+          <img src="{{ url_for('static', filename='assets/food-tagliolini.webp') }}" alt="Tagliolini alla colatura di alici" loading="lazy"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1716003483250-37b509940352?auto=format&amp;fit=crop&amp;w=400&amp;q=80';">
+          <div>
+            <h4 data-i18n="food.d2t">Tagliolini alla colatura di alici</h4>
+            <p data-i18n="food.d2p">Tagliolini, colatura di alici di Cetara, bottarga e scorza di limone.</p>
+          </div>
+          <span class="price">€ 18</span>
+        </article>
+
+        <article class="dish-row">
+          <img src="{{ url_for('static', filename='assets/food-tuna.webp') }}" alt="Tonno al pepe Timut" loading="lazy"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1666129793624-1e037acbbc07?auto=format&amp;fit=crop&amp;w=400&amp;q=80';">
+          <div>
+            <h4 data-i18n="food.d3t">Tonno al pepe Timut</h4>
+            <p data-i18n="food.d3p">Tonno scottato, crosta al pepe Timut, scaglie di cioccolato fondente e agrumi.</p>
+          </div>
+          <span class="price">€ 18</span>
+        </article>
+      </div>
+
+      <a href="#menu" class="btn btn-ghost magnetic" data-i18n="food.cta">Scopri il menu completo</a>
+    </div>
+  </section>
+
+  <!-- RESTAURANT DETAIL + MENU -->
+  <section id="menu" class="section-sand">
+    <div class="container">
+      <div class="split reveal">
+        <div class="split-media">
+          <img src="{{ url_for('static', filename='assets/panorama-terrace.webp') }}"
+               alt="Terrazza panoramica del Bagno Adriatico 62"
+               loading="lazy"
+               onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1716003483250-37b509940352?auto=format&amp;fit=crop&amp;w=1200&amp;q=80';">
+        </div>
+
+        <div class="split-text">
+          <span class="eyebrow-label" data-i18n="rist.eyebrow">Restaurant &amp; Panorama Terrace</span>
+          <h2 data-i18n="rist.title">Cena con ancora un po' di sabbia ai piedi.</h2>
+          <p data-i18n="rist.p">
+            Una terrazza sopraelevata sul mare, candele dopo il tramonto e una carta
+            che unisce il mare alle signature dello Chef Davide Tusa.
+          </p>
+
+          <div class="menu-tabs" role="tablist" aria-label="Categorie menu">
+            <button class="menu-tab active" type="button" data-target="#menu-starters" data-i18n="rist.tab1">Antipasti &amp; Poke</button>
+            <button class="menu-tab" type="button" data-target="#menu-first" data-i18n="rist.tab2">Primi</button>
+            <button class="menu-tab" type="button" data-target="#menu-main" data-i18n="rist.tab3">Secondi</button>
+            <button class="menu-tab" type="button" data-target="#menu-veggie" data-i18n="rist.tab4">Veggie</button>
+            <button class="menu-tab" type="button" data-target="#menu-wine" data-i18n="rist.tab5">Vini &amp; bollicine</button>
+          </div>
+
+          <div id="menu-starters" class="menu-panel active">
+            <div class="dish-list">
+              <article class="dish-row">
+                <div></div><div><h4>Poke al salmone</h4><p>Edamame, avocado, sesamo, agrumi.</p></div><span class="price">€ 16</span>
+              </article>
+              <article class="dish-row">
+                <div></div><div><h4>Tartare del giorno</h4><p>Selezione fresca dello Chef.</p></div><span class="price">€ 17</span>
+              </article>
+            </div>
+          </div>
+
+          <div id="menu-first" class="menu-panel">
+            <div class="dish-list">
+              <article class="dish-row">
+                <div></div><div><h4>Tagliolini alla colatura di alici</h4><p>Bottarga, limone e colatura di Cetara.</p></div><span class="price">€ 18</span>
+              </article>
+            </div>
+          </div>
+
+          <div id="menu-main" class="menu-panel">
+            <div class="dish-list">
+              <article class="dish-row">
+                <div></div><div><h4>Tonno al pepe Timut</h4><p>Cioccolato fondente e riduzione agli agrumi.</p></div><span class="price">€ 18</span>
+              </article>
+            </div>
+          </div>
+
+          <div id="menu-veggie" class="menu-panel">
+            <div class="dish-list">
+              <article class="dish-row">
+                <div></div><div><h4>Veggie selection</h4><p>Verdure stagionali, cereali ed erbe fresche.</p></div><span class="price">€ 14</span>
+              </article>
+            </div>
+          </div>
+
+          <div id="menu-wine" class="menu-panel">
+            <div class="dish-list">
+              <article class="dish-row">
+                <div></div><div><h4>Vini &amp; bollicine</h4><p>Selezione italiana e locale.</p></div><span class="price">ASK</span>
+              </article>
+            </div>
+          </div>
+
+          <a href="#booking" class="btn btn-ocean magnetic" data-i18n="rist.cta">Riserva la terrazza</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section id="events" class="section-dark">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="badge-terracotta">Ogni venerdì e sabato dalle 18:30</span>
+        <span class="eyebrow-label" data-i18n="events.eyebrow">Sunset &amp; Nightlife</span>
+        <h2 data-i18n="events.title">Il prossimo tramonto inizia tra</h2>
+      </div>
+
+      <div class="countdown reveal" data-countdown aria-label="Countdown" style="margin-top:8px;">
+        <div><b data-d>00</b><span data-i18n="events.days">giorni</span></div>
+        <div><b data-h>00</b><span data-i18n="events.hours">ore</span></div>
+        <div><b data-m>00</b><span data-i18n="events.min">min</span></div>
+        <div><b data-s>00</b><span data-i18n="events.sec">sec</span></div>
+      </div>
+
+      <div class="event-carousel reveal">
+        <div class="event-slide" style="background-image:url('https://images.unsplash.com/photo-1666129793624-1e037acbbc07?auto=format&amp;fit=crop&amp;w=700&amp;q=80');">
+          <span>18 LUG · Sunset</span>
+          <h4>Golden Hour Aperitivo</h4>
+        </div>
+        <div class="event-slide" style="background-image:url('https://images.unsplash.com/photo-1498740691211-eb7979f50128?auto=format&amp;fit=crop&amp;w=700&amp;q=80');">
+          <span>20 LUG · DJ Set</span>
+          <h4>Sunset Session</h4>
+        </div>
+        <div class="event-slide" style="background-image:url('https://images.unsplash.com/photo-1716003483250-37b509940352?auto=format&amp;fit=crop&amp;w=700&amp;q=80');">
+          <span>25 LUG · Dinner Show</span>
+          <h4>Sea &amp; Stars</h4>
+        </div>
+        <div class="event-slide" style="background-image:url('https://images.unsplash.com/photo-1768326119231-bf064c1b8fdf?auto=format&amp;fit=crop&amp;w=700&amp;q=80');">
+          <span>31 LUG · Cinema</span>
+          <h4>Movies by the Sea</h4>
+        </div>
+      </div>
+
+      <a href="#booking" class="btn btn-gold magnetic" style="margin-top:36px;" data-i18n="events.cta">Calendario completo eventi</a>
+    </div>
+  </section>
+
+  <!-- SPORT -->
+  <section id="arena">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow-label" data-i18n="sport.eyebrow">Beach Arena &amp; Active Life</span>
+        <h2 data-i18n="sport.title">Gioca prima di ordinare l'aperitivo.</h2>
+        <p class="lead-p" data-i18n="sport.p">
+          Quattro campi illuminati, noleggio tavole e sessioni mattutine per chi vuole
+          muoversi prima che la sabbia diventi calda.
+        </p>
+      </div>
+
+      <div class="sport-grid reveal">
+        <article class="sport-panel tall"
+          style="background-image:url('{{ url_for('static', filename='assets/beach-volley.webp') }}'), url('https://images.unsplash.com/photo-1666129793624-1e037acbbc07?auto=format&amp;fit=crop&amp;w=900&amp;q=80');">
+          <h4>Beach Volley</h4>
+          <p>Campi illuminati · Day &amp; Night</p>
+        </article>
+
+        <article class="sport-panel">
+          <h4>Footvolley</h4>
+          <p>Challenge your crew. Prenota il tuo slot.</p>
+        </article>
+
+        <article class="sport-panel">
+          <h4>Racquet</h4>
+          <p>Sport sulla sabbia, anche dopo il tramonto.</p>
+        </article>
+      </div>
+
+      <a href="#booking" class="btn btn-ocean magnetic" data-i18n="sport.book">Prenota un campo o una tavola</a>
+    </div>
+  </section>
+
+  <!-- BOOKINGS -->
+  <section id="booking" class="section-sand">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow-label" data-i18n="book.eyebrow">Reservations</span>
+        <h2 data-i18n="book.title">Dicci dove vuoi essere.</h2>
+        <p class="lead-p" data-i18n="book.p">
+          Scegli il servizio e lo slot: confermeremo via WhatsApp o email, senza bisogno di account.
+        </p>
+      </div>
+
+      <div class="booking-tabs" role="tablist" aria-label="Tipo di prenotazione">
+        <button class="booking-tab active" type="button" data-target="#booking-beach" data-i18n="book.tab1">Spiaggia &amp; gazebo</button>
+        <button class="booking-tab" type="button" data-target="#booking-restaurant" data-i18n="book.tab2">Tavolo ristorante</button>
+        <button class="booking-tab" type="button" data-target="#booking-sport" data-i18n="book.tab3">Sport &amp; SUP</button>
+      </div>
+
+      <!-- BEACH BOOKING -->
+      <form id="booking-beach" class="booking-form active" data-booking="Beach & gazebo">
+        <div class="field">
+          <label for="beach-date" data-i18n="book.date">Data</label>
+          <input id="beach-date" type="date" name="date" required>
+        </div>
+        <div class="field">
+          <label for="beach-time" data-i18n="book.time">Ora</label>
+          <input id="beach-time" type="time" name="time" required>
+        </div>
+        <div class="field">
+          <label for="beach-people" data-i18n="book.people">Persone</label>
+          <input id="beach-people" type="number" name="people" min="1" max="20" value="2" required>
+        </div>
+        <div class="field">
+          <label for="beach-name" data-i18n="book.name">Nome e cognome</label>
+          <input id="beach-name" type="text" name="name" required>
+        </div>
+        <div class="field">
+          <label for="beach-phone" data-i18n="book.phone">Telefono</label>
+          <input id="beach-phone" type="tel" name="phone" required>
+        </div>
+        <div class="field">
+          <label for="beach-email" data-i18n="book.email">Email</label>
+          <input id="beach-email" type="email" name="email" required>
+        </div>
+        <div class="field full">
+          <label data-i18n="book.zone">Zona</label>
+          <div class="zone-choice">
+            <label><input type="radio" name="zone" value="Front row" required><span data-i18n="book.zone1">Prima fila</span></label>
+            <label><input type="radio" name="zone" value="VIP gazebo"><span data-i18n="book.zone2">Gazebo VIP</span></label>
+            <label><input type="radio" name="zone" value="Standard row"><span data-i18n="book.zone3">Fila standard</span></label>
+          </div>
+        </div>
+        <div class="field full">
+          <label for="beach-notes" data-i18n="book.notes">Note (opzionale)</label>
+          <textarea id="beach-notes" name="notes"></textarea>
+        </div>
+        <button class="btn btn-ocean" type="submit" data-i18n="book.submit">Invia richiesta</button>
+        <p class="form-note" data-i18n="book.note">
+          Questa è una richiesta, non una conferma automatica — nessun pagamento viene effettuato qui.
+          La disponibilità in tempo reale e il pagamento con carta richiedono Stripe / un motore di booking spiaggia.
+        </p>
+        <div class="confirm-box">
+          <p data-i18n="book.confirm">Grazie — la richiesta è pronta. Inviala via WhatsApp o email e il team confermerà lo slot.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:16px;">
+            <a class="btn btn-ocean" data-wa-link href="#" target="_blank" rel="noopener">Invia su WhatsApp</a>
+            <a class="btn btn-ghost" data-mail-link href="#">Invia via email</a>
+          </div>
+        </div>
+      </form>
+
+      <!-- RESTAURANT BOOKING -->
+      <form id="booking-restaurant" class="booking-form" novalidate>
+        <div class="field">
+          <label for="restaurant-date">Data</label>
+          <input id="restaurant-date" type="date" required>
+        </div>
+        <div class="field">
+          <label for="restaurant-time">Ora</label>
+          <select id="restaurant-time" required>
+            <option value="">Seleziona</option>
+            <option>19:00</option><option>19:30</option><option>20:00</option>
+            <option>20:30</option><option>21:00</option><option>21:30</option><option>22:00</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="restaurant-people">Persone</label>
+          <input id="restaurant-people" type="number" min="1" max="50" value="2" required>
+        </div>
+        <div class="field full">
+          <button class="btn btn-ocean" id="show-table-options" type="button">Mostra tavoli disponibili</button>
+        </div>
+        <div id="table-options" class="field full"></div>
+        <div id="selected-table" class="field full"></div>
+        <div id="restaurant-details" class="booking-details hidden">
+          <div class="field">
+            <label for="restaurant-name">Nome e cognome</label>
+            <input id="restaurant-name" type="text" required>
+          </div>
+          <div class="field">
+            <label for="restaurant-phone">Telefono</label>
+            <input id="restaurant-phone" type="tel" required>
+          </div>
+          <div class="field full">
+            <label for="restaurant-notes">Note (opzionale)</label>
+            <textarea id="restaurant-notes"></textarea>
+          </div>
+          <div class="field full">
+            <button class="btn btn-ocean" id="confirm-restaurant" type="button">Conferma prenotazione</button>
+          </div>
+        </div>
+        <div id="restaurant-message" class="confirm-box"></div>
+      </form>
+
+      <!-- SPORT BOOKING -->
+      <form id="booking-sport" class="booking-form" data-booking="Sport & SUP">
+        <div class="field">
+          <label for="sport-date" data-i18n="book.date">Data</label>
+          <input id="sport-date" type="date" name="date" required>
+        </div>
+        <div class="field">
+          <label for="sport-time" data-i18n="book.time">Ora</label>
+          <input id="sport-time" type="time" name="time" required>
+        </div>
+        <div class="field">
+          <label for="sport-people" data-i18n="book.people">Persone</label>
+          <input id="sport-people" type="number" name="people" min="1" max="20" value="2" required>
+        </div>
+        <div class="field">
+          <label for="sport-name" data-i18n="book.name">Nome e cognome</label>
+          <input id="sport-name" type="text" name="name" required>
+        </div>
+        <div class="field">
+          <label for="sport-phone" data-i18n="book.phone">Telefono</label>
+          <input id="sport-phone" type="tel" name="phone" required>
+        </div>
+        <div class="field">
+          <label for="sport-email" data-i18n="book.email">Email</label>
+          <input id="sport-email" type="email" name="email" required>
+        </div>
+        <div class="field full">
+          <label for="sport-activity" data-i18n="book.sport">Attività</label>
+          <select id="sport-activity" name="activity" required>
+            <option value="Beach volley court" data-i18n="book.sport1">Campo beach volley</option>
+            <option value="Footvolley court" data-i18n="book.sport2">Campo footvolley</option>
+            <option value="Racquet court" data-i18n="book.sport3">Campo racquet</option>
+            <option value="SUP rental" data-i18n="book.sport4">Noleggio SUP</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label for="sport-notes" data-i18n="book.notes">Note (opzionale)</label>
+          <textarea id="sport-notes" name="notes"></textarea>
+        </div>
+        <button class="btn btn-ocean" type="submit" data-i18n="book.submit">Invia richiesta</button>
+        <p class="form-note" data-i18n="book.note">Questa è una richiesta, non una conferma automatica — nessun pagamento viene effettuato qui.</p>
+        <div class="confirm-box">
+          <p data-i18n="book.confirm">Grazie — la richiesta è pronta. Inviala via WhatsApp o email e il team confermerà lo slot.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:16px;">
+            <a class="btn btn-ocean" data-wa-link href="#" target="_blank" rel="noopener">Invia su WhatsApp</a>
+            <a class="btn btn-ghost" data-mail-link href="#">Invia via email</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="glass-card quick-booking reveal" style="padding:32px;margin-bottom:56px;">
+      <span class="eyebrow-label" style="color:var(--gold);">Prenotazione rapida</span>
+      <form id="quick-booking-form" class="quick-booking-form">
+        <div class="field">
+          <label for="qb-date">Data</label>
+          <input id="qb-date" type="date" required>
+        </div>
+        <div class="field">
+          <label for="qb-people">Ospiti</label>
+          <input id="qb-people" type="number" min="1" max="20" value="2" required>
+        </div>
+        <div class="field">
+          <label for="qb-type">Tipologia</label>
+          <select id="qb-type">
+            <option value="beach">Spiaggia</option>
+            <option value="restaurant">Ristorante</option>
+            <option value="sport">Sport &amp; SUP</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-gold magnetic">Vai alla prenotazione</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="container footer-grid">
+    <div>
+      <h5>BAGNO ADRIATICO <span style="color:var(--gold)">62</span></h5>
+      <p>Beach Club · Lifestyle · Gourmet</p>
+    </div>
+
+    <div>
+      <h5 data-i18n="footer.addr">Indirizzo</h5>
+      <p>Viale Pasubio 62<br>Cesenatico (FC), Italy</p>
+    </div>
+
+    <div>
+      <h5 data-i18n="footer.hours">Orari</h5>
+      <p data-i18n="footer.hoursv">Tutti i giorni, 8:00 – 01:00 (Giu–Set)</p>
+    </div>
+
+    <div>
+      <h5 data-i18n="footer.contact">Contatti</h5>
+      <a href="mailto:info@adriatico62.it">info@adriatico62.it</a>
+      <a href="https://wa.me/390000000000" target="_blank" rel="noopener">WhatsApp</a>
+      <p data-i18n="footer.lang">Lingua</p>
+      <p>IT · EN · DE</p>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <span>© 2026 Bagno Adriatico 62 — <span data-i18n="footer.rights">Tutti i diritti riservati.</span></span>
+    <a href="#" data-i18n="footer.privacy">Privacy &amp; cookie policy</a>
+  </div>
+</footer>
+
+<!-- COOKIE BANNER -->
+<div class="cookie-banner" role="dialog" aria-label="Cookie">
+  <p data-i18n="cookie.text">
+    Utilizziamo cookie tecnici e, con il tuo consenso, cookie analitici per migliorare l'esperienza.
+    Nessun tracciamento prima della tua scelta.
+  </p>
+  <div class="cookie-actions">
+    <button type="button" class="btn btn-outline" data-i18n="cookie.reject">Solo tecnici</button>
+    <button type="button" class="btn btn-gold" data-i18n="cookie.accept">Accetta tutti</button>
+  </div>
+</div>
+
+<a class="wa-float" href="https://wa.me/390000000000" target="_blank" rel="noopener"
+   aria-label="Contatta Bagno Adriatico 62 su WhatsApp">WA</a>
+
+<script src="{{ url_for('static', filename='script.js') }}" defer></script>
+<script src="{{ url_for('static', filename='booking.js') }}"></script>
+</body>
+</html>
