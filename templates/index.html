@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Bagno Adriatico 62 Cesenatico — Beach Club, ristorante gourmet, sport, aperitivi e sunset events sul mare.">
+  <meta name="description" content="Bagno Adriatico 62 Cesenatico: Beach Club, ristorante, sport e aperitivi al tramonto sul mare, dal 2007.">
   <meta name="theme-color" content="#005F73">
-  <title>Bagno Adriatico 62 — Cesenatico Beach Club</title>
+  <title>Bagno Adriatico 62 | Cesenatico Beach Club</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
 
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
-  <meta property="og:title" content="Bagno Adriatico 62 — Cesenatico Beach Club">
+  <meta property="og:title" content="Bagno Adriatico 62 | Cesenatico Beach Club">
   <meta property="og:description" content="Beach club, gourmet terrace, sport e sunset DJ sets sul mare di Cesenatico.">
   <meta property="og:type" content="website">
 
@@ -31,9 +31,12 @@
     },
     "servesCuisine": "Seafood",
     "priceRange": "€€",
+    "telephone": "+39 347 7629132",
+    "email": "info@bagnoadriatico.com",
     "url": ""
   }
   </script>
+  <!-- "url" nel JSON-LD va compilato con il dominio definitivo quando sarà scelto insieme al proprietario -->
 </head>
 
 <body>
@@ -79,7 +82,7 @@
         <p class="hero-eyebrow" data-i18n="hero.eyebrow">Cesenatico, costa adriatica</p>
         <h1 data-i18n="hero.title">L'arte del relax in riva al mare.</h1>
         <p class="hero-sub" data-i18n="hero.sub">
-          Spiaggia riservata, cucina di mare ed esperienze al tramonto —
+          Spiaggia riservata, cucina di mare ed esperienze al tramonto:
           lettini premium, cucina d'autore, dal giorno alla notte.
         </p>
         <div class="hero-ctas">
@@ -167,42 +170,42 @@
     <div class="container">
       <div class="section-head reveal">
         <span class="eyebrow-label" data-i18n="food.eyebrow">Food &amp; Mixology</span>
-        <h2 data-i18n="food.title">Chef Davide Tusa, con i piedi nella sabbia.</h2>
+        <h2 data-i18n="food.title">La cucina del Bagno, con i piedi nella sabbia.</h2>
         <p class="lead-p" data-i18n="food.p">
-          Una cucina che prende sul serio la spiaggia: pesce crudo, impiattamenti puliti
-          e un cocktail bar costruito per l'ora prima della cena.
+          Dalla colazione alla cena, la cucina segue il ritmo della giornata in spiaggia:
+          leggera a mezzogiorno, più curata quando cala il sole.
         </p>
       </div>
 
+      <!-- Contenuto basato su ricerca pubblica (sito ufficiale, social). Piatti e prezzi
+           specifici non sono confermati: da sostituire con il menu reale del proprietario
+           appena disponibile. Le immagini restano quelle già presenti nel progetto. -->
       <div class="dish-list reveal">
         <article class="dish-row">
-          <img src="{{ url_for('static', filename='assets/food-poke.webp') }}" alt="Poke al salmone" loading="lazy"
+          <img src="{{ url_for('static', filename='assets/food-poke.webp') }}" alt="Colazione in spiaggia" loading="lazy"
                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1768326119231-bf064c1b8fdf?auto=format&amp;fit=crop&amp;w=400&amp;q=80';">
           <div>
-            <h4 data-i18n="food.d1t">Poke al salmone</h4>
-            <p data-i18n="food.d1p">Salmone marinato, edamame, avocado, sesamo, dressing agli agrumi.</p>
+            <h4 data-i18n="food.d1t">Colazione</h4>
+            <p data-i18n="food.d1p">Pasticceria del territorio, dolci fatti in casa, uova con bacon e pancake su richiesta.</p>
           </div>
-          <span class="price">€ 16</span>
         </article>
 
         <article class="dish-row">
-          <img src="{{ url_for('static', filename='assets/food-tagliolini.webp') }}" alt="Tagliolini alla colatura di alici" loading="lazy"
+          <img src="{{ url_for('static', filename='assets/food-tagliolini.webp') }}" alt="Pranzo in spiaggia" loading="lazy"
                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1716003483250-37b509940352?auto=format&amp;fit=crop&amp;w=400&amp;q=80';">
           <div>
-            <h4 data-i18n="food.d2t">Tagliolini alla colatura di alici</h4>
-            <p data-i18n="food.d2p">Tagliolini, colatura di alici di Cetara, bottarga e scorza di limone.</p>
+            <h4 data-i18n="food.d2t">Pranzo, beach picnic</h4>
+            <p data-i18n="food.d2p">Piatti leggeri e freschi della tradizione romagnola, anche direttamente al lettino.</p>
           </div>
-          <span class="price">€ 18</span>
         </article>
 
         <article class="dish-row">
-          <img src="{{ url_for('static', filename='assets/food-tuna.webp') }}" alt="Tonno al pepe Timut" loading="lazy"
+          <img src="{{ url_for('static', filename='assets/food-tuna.webp') }}" alt="Cena in terrazza" loading="lazy"
                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1666129793624-1e037acbbc07?auto=format&amp;fit=crop&amp;w=400&amp;q=80';">
           <div>
-            <h4 data-i18n="food.d3t">Tonno al pepe Timut</h4>
-            <p data-i18n="food.d3p">Tonno scottato, crosta al pepe Timut, scaglie di cioccolato fondente e agrumi.</p>
+            <h4 data-i18n="food.d3t">Cena a lume di candela</h4>
+            <p data-i18n="food.d3p">Dopo il tramonto, cena in terrazza con selezione musicale curata.</p>
           </div>
-          <span class="price">€ 18</span>
         </article>
       </div>
 
@@ -226,58 +229,41 @@
           <h2 data-i18n="rist.title">Cena con ancora un po' di sabbia ai piedi.</h2>
           <p data-i18n="rist.p">
             Una terrazza sopraelevata sul mare, candele dopo il tramonto e una carta
-            che unisce il mare alle signature dello Chef Davide Tusa.
+            che unisce il mare alla tradizione romagnola.
           </p>
 
-          <div class="menu-tabs" role="tablist" aria-label="Categorie menu">
-            <button class="menu-tab active" type="button" data-target="#menu-starters" data-i18n="rist.tab1">Antipasti &amp; Poke</button>
-            <button class="menu-tab" type="button" data-target="#menu-first" data-i18n="rist.tab2">Primi</button>
-            <button class="menu-tab" type="button" data-target="#menu-main" data-i18n="rist.tab3">Secondi</button>
-            <button class="menu-tab" type="button" data-target="#menu-veggie" data-i18n="rist.tab4">Veggie</button>
-            <button class="menu-tab" type="button" data-target="#menu-wine" data-i18n="rist.tab5">Vini &amp; bollicine</button>
+          <!-- Tab basate sulle tre fasce orarie reali della cucina (fonte: ricerca pubblica).
+               Il menu con piatti e prezzi va sostituito qui dentro appena il proprietario
+               lo conferma: per ora niente piatti o prezzi inventati. -->
+          <div class="menu-tabs" role="tablist" aria-label="Fasce del servizio">
+            <button class="menu-tab active" type="button" data-target="#menu-starters" data-i18n="rist.tab1">Colazione</button>
+            <button class="menu-tab" type="button" data-target="#menu-first" data-i18n="rist.tab2">Pranzo</button>
+            <button class="menu-tab" type="button" data-target="#menu-main" data-i18n="rist.tab3">Cena</button>
+            <button class="menu-tab" type="button" data-target="#menu-veggie" data-i18n="rist.tab4">Eventi privati</button>
           </div>
 
           <div id="menu-starters" class="menu-panel active">
-            <div class="dish-list">
-              <article class="dish-row">
-                <div></div><div><h4>Poke al salmone</h4><p>Edamame, avocado, sesamo, agrumi.</p></div><span class="price">€ 16</span>
-              </article>
-              <article class="dish-row">
-                <div></div><div><h4>Tartare del giorno</h4><p>Selezione fresca dello Chef.</p></div><span class="price">€ 17</span>
-              </article>
-            </div>
+            <p class="lead-p" style="font-size:1rem;">
+              Pasticceria del territorio e dolci fatti in casa, uova con bacon e pancake su richiesta.
+            </p>
           </div>
 
           <div id="menu-first" class="menu-panel">
-            <div class="dish-list">
-              <article class="dish-row">
-                <div></div><div><h4>Tagliolini alla colatura di alici</h4><p>Bottarga, limone e colatura di Cetara.</p></div><span class="price">€ 18</span>
-              </article>
-            </div>
+            <p class="lead-p" style="font-size:1rem;">
+              Beach picnic: piatti leggeri e freschi della tradizione romagnola, anche al lettino.
+            </p>
           </div>
 
           <div id="menu-main" class="menu-panel">
-            <div class="dish-list">
-              <article class="dish-row">
-                <div></div><div><h4>Tonno al pepe Timut</h4><p>Cioccolato fondente e riduzione agli agrumi.</p></div><span class="price">€ 18</span>
-              </article>
-            </div>
+            <p class="lead-p" style="font-size:1rem;">
+              Cena a lume di candela dopo il tramonto, con selezione musicale curata.
+            </p>
           </div>
 
           <div id="menu-veggie" class="menu-panel">
-            <div class="dish-list">
-              <article class="dish-row">
-                <div></div><div><h4>Veggie selection</h4><p>Verdure stagionali, cereali ed erbe fresche.</p></div><span class="price">€ 14</span>
-              </article>
-            </div>
-          </div>
-
-          <div id="menu-wine" class="menu-panel">
-            <div class="dish-list">
-              <article class="dish-row">
-                <div></div><div><h4>Vini &amp; bollicine</h4><p>Selezione italiana e locale.</p></div><span class="price">ASK</span>
-              </article>
-            </div>
+            <p class="lead-p" style="font-size:1rem;">
+              Banchetti, cene su misura e matrimoni: la terrazza si organizza anche per eventi privati.
+            </p>
           </div>
 
           <a href="#booking" class="btn btn-ocean magnetic" data-i18n="rist.cta">Riserva la terrazza</a>
@@ -290,7 +276,7 @@
   <section id="events" class="section-dark">
     <div class="container">
       <div class="section-head reveal">
-        <span class="badge-terracotta">Ogni venerdì e sabato dalle 18:30</span>
+        <span class="badge-terracotta">Estate 2026</span>
         <span class="eyebrow-label" data-i18n="events.eyebrow">Sunset &amp; Nightlife</span>
         <h2 data-i18n="events.title">Il prossimo tramonto inizia tra</h2>
       </div>
@@ -302,26 +288,22 @@
         <div><b data-s>00</b><span data-i18n="events.sec">sec</span></div>
       </div>
 
-      <div class="event-carousel reveal">
-        <div class="event-slide" style="background-image:url('https://images.unsplash.com/photo-1666129793624-1e037acbbc07?auto=format&amp;fit=crop&amp;w=700&amp;q=80');">
-          <span>18 LUG · Sunset</span>
-          <h4>Golden Hour Aperitivo</h4>
-        </div>
-        <div class="event-slide" style="background-image:url('https://images.unsplash.com/photo-1498740691211-eb7979f50128?auto=format&amp;fit=crop&amp;w=700&amp;q=80');">
-          <span>20 LUG · DJ Set</span>
-          <h4>Sunset Session</h4>
-        </div>
-        <div class="event-slide" style="background-image:url('https://images.unsplash.com/photo-1716003483250-37b509940352?auto=format&amp;fit=crop&amp;w=700&amp;q=80');">
-          <span>25 LUG · Dinner Show</span>
-          <h4>Sea &amp; Stars</h4>
-        </div>
-        <div class="event-slide" style="background-image:url('https://images.unsplash.com/photo-1768326119231-bf064c1b8fdf?auto=format&amp;fit=crop&amp;w=700&amp;q=80');">
-          <span>31 LUG · Cinema</span>
-          <h4>Movies by the Sea</h4>
+      <!-- Il calendario eventi ufficiale risultava vuoto al momento della ricerca:
+           niente date inventate. "Arenati" (cinema in spiaggia) è un evento storico
+           reale del Bagno, citato senza una data specifica finché non è confermata. -->
+      <div class="event-note reveal" style="max-width:60ch;margin-top:8px;">
+        <p style="color:rgba(255,255,255,0.85);font-size:1.05rem;">
+          Durante l'estate il Bagno organizza aperitivi al tramonto, serate a tema e
+          "Arenati", il cinema in spiaggia diventato un appuntamento fisso. Le date si
+          aggiornano stagione per stagione: seguile sui nostri canali social.
+        </p>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:24px;">
+          <a href="https://www.instagram.com/bagnoadriatico/" target="_blank" rel="noopener" class="btn btn-outline">Instagram</a>
+          <a href="https://www.facebook.com/BagnoAdriatico62/" target="_blank" rel="noopener" class="btn btn-outline">Facebook</a>
         </div>
       </div>
 
-      <a href="#booking" class="btn btn-gold magnetic" style="margin-top:36px;" data-i18n="events.cta">Calendario completo eventi</a>
+      <a href="#booking" class="btn btn-gold magnetic" style="margin-top:36px;" data-i18n="events.cta">Prenota il tuo posto</a>
     </div>
   </section>
 
@@ -332,8 +314,8 @@
         <span class="eyebrow-label" data-i18n="sport.eyebrow">Beach Arena &amp; Active Life</span>
         <h2 data-i18n="sport.title">Gioca prima di ordinare l'aperitivo.</h2>
         <p class="lead-p" data-i18n="sport.p">
-          Quattro campi illuminati, noleggio tavole e sessioni mattutine per chi vuole
-          muoversi prima che la sabbia diventi calda.
+          Quattro campi illuminati e il programma sportivo "Resident Outsiders": beach volley,
+          footvolley, racchettoni, SUP e yoga, tra un bagno e l'altro.
         </p>
       </div>
 
@@ -416,11 +398,11 @@
         </div>
         <button class="btn btn-ocean" type="submit" data-i18n="book.submit">Invia richiesta</button>
         <p class="form-note" data-i18n="book.note">
-          Questa è una richiesta, non una conferma automatica — nessun pagamento viene effettuato qui.
+          Questa è una richiesta, non una conferma automatica: nessun pagamento viene effettuato qui.
           La disponibilità in tempo reale e il pagamento con carta richiedono Stripe / un motore di booking spiaggia.
         </p>
         <div class="confirm-box">
-          <p data-i18n="book.confirm">Grazie — la richiesta è pronta. Inviala via WhatsApp o email e il team confermerà lo slot.</p>
+          <p data-i18n="book.confirm">Grazie: la richiesta è pronta. Inviala via WhatsApp o email e il team confermerà lo slot.</p>
           <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:16px;">
             <a class="btn btn-ocean" data-wa-link href="#" target="_blank" rel="noopener">Invia su WhatsApp</a>
             <a class="btn btn-ghost" data-mail-link href="#">Invia via email</a>
@@ -511,9 +493,9 @@
           <textarea id="sport-notes" name="notes"></textarea>
         </div>
         <button class="btn btn-ocean" type="submit" data-i18n="book.submit">Invia richiesta</button>
-        <p class="form-note" data-i18n="book.note">Questa è una richiesta, non una conferma automatica — nessun pagamento viene effettuato qui.</p>
+        <p class="form-note" data-i18n="book.note">Questa è una richiesta, non una conferma automatica: nessun pagamento viene effettuato qui.</p>
         <div class="confirm-box">
-          <p data-i18n="book.confirm">Grazie — la richiesta è pronta. Inviala via WhatsApp o email e il team confermerà lo slot.</p>
+          <p data-i18n="book.confirm">Grazie: la richiesta è pronta. Inviala via WhatsApp o email e il team confermerà lo slot.</p>
           <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:16px;">
             <a class="btn btn-ocean" data-wa-link href="#" target="_blank" rel="noopener">Invia su WhatsApp</a>
             <a class="btn btn-ghost" data-mail-link href="#">Invia via email</a>
@@ -570,15 +552,15 @@
 
     <div>
       <h5 data-i18n="footer.contact">Contatti</h5>
-      <a href="mailto:info@adriatico62.it">info@adriatico62.it</a>
-      <a href="https://wa.me/390000000000" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="mailto:info@bagnoadriatico.com">info@bagnoadriatico.com</a>
+      <a href="https://wa.me/393477629132" target="_blank" rel="noopener">WhatsApp</a>
       <p data-i18n="footer.lang">Lingua</p>
       <p>IT · EN · DE</p>
     </div>
   </div>
 
   <div class="container footer-bottom">
-    <span>© 2026 Bagno Adriatico 62 — <span data-i18n="footer.rights">Tutti i diritti riservati.</span></span>
+    <span>© 2026 Bagno Adriatico 62 · <span data-i18n="footer.rights">Tutti i diritti riservati.</span></span>
     <a href="#" data-i18n="footer.privacy">Privacy &amp; cookie policy</a>
   </div>
 </footer>
@@ -595,7 +577,7 @@
   </div>
 </div>
 
-<a class="wa-float" href="https://wa.me/390000000000" target="_blank" rel="noopener"
+<a class="wa-float" href="https://wa.me/393477629132" target="_blank" rel="noopener"
    aria-label="Contatta Bagno Adriatico 62 su WhatsApp">WA</a>
 
 <script src="{{ url_for('static', filename='script.js') }}" defer></script>
