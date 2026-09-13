@@ -70,7 +70,7 @@
   <section class="hero" aria-label="Bagno Adriatico 62">
     <video autoplay muted loop playsinline poster="{{ url_for('static', filename='assets/hero-poster.webp') }}"
            style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
-      <source src="{{ url_for(\'static\', filename=\'assets/hero-beachclub.mp4\') }}" type="video/mp4">
+      <source src="{{ url_for('static', filename='assets/hero-beachclub.mp4') }}" type="video/mp4">
     </video>
 
     <div class="hero-inner">
@@ -138,7 +138,7 @@
         </div>
 
         <div class="split-media">
-          <img src="{{ url_for(\'static\', filename=\'assets/beach-club.webp\') }}"
+          <img src="{{ url_for('static', filename='assets/beach-club.webp') }}"
                alt="Area spiaggia premium del Bagno Adriatico 62"
                loading="lazy">
         </div>
@@ -160,7 +160,7 @@
 
       <div class="dish-list">
         <article class="dish-row">
-          <img src="{{ url_for(\'static\', filename=\'assets/food-poke.webp\') }}" alt="Poke al salmone" loading="lazy">
+          <img src="{{ url_for('static', filename='assets/food-poke.webp') }}" alt="Poke al salmone" loading="lazy">
           <div>
             <h4 data-i18n="food.d1t">Poke al salmone</h4>
             <p data-i18n="food.d1p">Salmone marinato, edamame, avocado, sesamo, dressing agli agrumi.</p>
@@ -169,7 +169,7 @@
         </article>
 
         <article class="dish-row">
-          <img src="{{ url_for(\'static\', filename=\'assets/food-tagliolini.webp\') }}" alt="Tagliolini alla colatura di alici" loading="lazy">
+          <img src="{{ url_for('static', filename='assets/food-tagliolini.webp') }}" alt="Tagliolini alla colatura di alici" loading="lazy">
           <div>
             <h4 data-i18n="food.d2t">Tagliolini alla colatura di alici</h4>
             <p data-i18n="food.d2p">Tagliolini, colatura di alici di Cetara, bottarga e scorza di limone.</p>
@@ -178,7 +178,7 @@
         </article>
 
         <article class="dish-row">
-          <img src="{{ url_for(\'static\', filename=\'assets/food-tuna.webp\') }}" alt="Tonno al pepe Timut" loading="lazy">
+          <img src="{{ url_for('static', filename='assets/food-tuna.webp') }}" alt="Tonno al pepe Timut" loading="lazy">
           <div>
             <h4 data-i18n="food.d3t">Tonno al pepe Timut</h4>
             <p data-i18n="food.d3p">Tonno scottato, crosta al pepe Timut, scaglie di cioccolato fondente e agrumi.</p>
@@ -196,7 +196,7 @@
     <div class="container">
       <div class="split">
         <div class="split-media">
-          <img src="{{ url_for(\'static\', filename=\'assets/panorama-terrace.webp\') }}"
+          <img src="{{ url_for('static', filename='assets/panorama-terrace.webp') }}"
                alt="Terrazza panoramica del Bagno Adriatico 62"
                loading="lazy">
         </div>
@@ -428,7 +428,7 @@
           <select id="restaurant-time" required>
             <option value="">Seleziona</option>
             <option>19:00</option><option>19:30</option><option>20:00</option>
-            <option>20:30</option><option>21:00</option><option>21:30</option><option>22:00</option>
+            <option>20:30</option><option>21:00</option><option>22:00</option>
           </select>
         </div>
         <div class="field">
